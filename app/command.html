@@ -22,13 +22,19 @@
 
 
         <div class="hero-unit">
-            <h1>Patterns</h1>
-            <ul>
-            <li><a href="/observer.html">Observer</a></li>
-            <li><a href="/command.html">Command</a></li>
-
-
+            <h1>Command Pattern</h1>
+            <p><a href="/">Home</a></p>
+            <ul class="commands">
+				<li data-cmd="moveUp">up</li>
+				<li data-cmd="moveDown">down</li>
+				<li data-cmd="moveLeft">left</li>
+				<li data-cmd="moveRight">right</li>
+				<li data-cmd="undo">undo</li>
+				<li data-cmd="redo">redo</li>
             </ul>
+            <div id="stage">
+				<div id="person"></div>
+            </div>
         </div>
 
 
@@ -40,6 +46,7 @@
 
 
         <script src="scripts/main.js"></script>
+        <script src="scripts/command.js"></script>
 
 </body>
 </html>
